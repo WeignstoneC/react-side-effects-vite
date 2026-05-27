@@ -5,11 +5,16 @@ This lab demonstrates how to handle **side effects** in React using the `useEffe
 
 ## Setup
 
-Run `npm install` to install dependencies.
+1. Run `npm install` to install dependencies.
+2. Run `npm run dev` to start the React app locally at `http://localhost:5173`.
+3. In another terminal, run `npm run test` to execute the test suite.
 
-Then, run `npm run dev` to start up the React app at `http://localhost:5173`.
+## Usage
 
-In another tab, run `npm run test` to run the test suite.
+- The app fetches a random programming joke when the page first loads.
+- Click the **Get a New Joke** button to fetch another joke.
+- While the app is waiting on the API response, a **Loading...** message is displayed.
+- If the API request fails, an error message is shown instead of breaking the UI.
 
 Before you start building out the application, examine the current code and component hierarchy. This will tell you how components can pass data to each other as well as where that information should be stored.
 
